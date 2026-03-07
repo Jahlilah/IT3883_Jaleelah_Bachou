@@ -38,6 +38,9 @@ entry_mpg.pack()
 # update result whenever user types
 entry_mpg.bind("<KeyRelease>", convert)
 
+entry_mpg.insert(0, "30")
+convert()
+
 # result label
 label2 = tk.Label(window, text="Kilometers per Liter:")
 label2.pack(pady=10)
