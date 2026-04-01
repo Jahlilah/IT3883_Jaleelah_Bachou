@@ -10,15 +10,23 @@
 
 import socket
 
+# Store the server IP address and port number
 server_ip = "127.0.0.1"
 port = 45000
 
+# Create a client socket using IPv4 and TCP
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+# Connect this program to Program B
 client.connect((server_ip, port))
 
+# Ask the user to type a message
 user_input = input("Type something to send: ")
+
+# Send the user's message to Program B
 client.send(user_input.encode())
 
+# Receive the response from Program B
 reply = client.recv(1024).decode()
 
 print("Received from Program B:", reply)
