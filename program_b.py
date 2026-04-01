@@ -1,3 +1,13 @@
+# Program Name: program_b.py
+# Course: IT3883/Section 01
+# Student Name: Jaleelah Bachou
+# Assignment Number: Assignment 4
+# Due Date: 04/01/2026
+# Purpose: This program waits for a connection from Program A, receives a
+# string, changes the string to uppercase, prints it, and sends it back
+# to Program A.
+# Resources Used: Class notes, lecture examples, and general debugging 
+
 import socket
 
 host = "127.0.0.1"
